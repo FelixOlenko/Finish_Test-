@@ -45,5 +45,15 @@ static string[] RemoveBigEntries(string[] inputArray)
     }
     string[] newArray = new string[newArraySize];
     int currentWord = 0;
+    for (int i = 0; i < inputArray.Length; i++)
+    {
+        var word = inputArray[i];
+        if (word.Length <= 3)
+        {
+            newArray[currentWord] = word;
+            currentWord++;
+        }
+    }
+    return newArray;
 
 }
