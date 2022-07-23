@@ -4,3 +4,7 @@ Console.WriteLine("Введите массив строк поочередно �
 var inputArray = ReadArray();
 var outputArray = RemoveBigEntries(inputArray);
 Console.WriteLine("Слова в которых не более 3-х символов:");
+for (int i = 0; i < outputArray.Length; i++)
+{
+    Console.Write($" \"{outputArray[i]}\"; ");
+}
