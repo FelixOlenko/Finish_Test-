@@ -32,3 +32,18 @@ static string[] ReadArray()
     }
     return words;
 }
+
+static string[] RemoveBigEntries(string[] inputArray)
+{
+    int newArraySize = 0;
+    foreach (string word in inputArray)
+    {
+        if (word.Length <= 3)
+        {
+            newArraySize++;
+        }
+    }
+    string[] newArray = new string[newArraySize];
+    int currentWord = 0;
+
+}
